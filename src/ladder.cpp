@@ -34,7 +34,7 @@ bool is_adjacent(const string& word1, const string& word2) {
 }
 vector<string> generate_word_ladder(const string& begin_word, const string& end_word, const set<string>& word_list) {
     if (begin_word == end_word) {
-        cout << error(begin_word, end_word, "are the same");
+        error(begin_word, end_word, "are the same");
         return {};
     }
 
