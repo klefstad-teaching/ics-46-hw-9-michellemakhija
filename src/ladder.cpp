@@ -11,7 +11,7 @@ bool edit_distance_within(const std::string& str1, const std::string& str2, int 
     if (abs(stringLength1-stringLength2) > d) { return false; }
     
     int editsToWord = 0;
-    int i, j;
+    int i = 0, j = 0;
 
     while (i < stringLength1 && j < stringLength2) {
         if (str1[i] != str2[j]) {
